@@ -1,0 +1,20 @@
+﻿<Window x:Class="VMManagementSystem.ReportsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VMManagementSystem"
+        mc:Ignorable="d"
+        Title="ReportsWindow" Height="313.953" Width="465.448">
+    <Grid>
+        <Button x:Name="oneProductMissing" Content="List of terminals that have at least one product missing" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="301" Height="22" Click="oneProductMissing_Click"/>
+        <Button x:Name="totalProfit" Content="List of terminals with their total profit" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="301"  Height="22" Click="totalProfit_Click"/>
+        <Button x:Name="leastSoldProducts" Content="5 least sold products" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="301"  Height="22" Click="leastSoldProducts_Click"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Height="119" Margin="10,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301"/>
+        <TextBox x:Name="monthTextBox" HorizontalAlignment="Left" Height="23" Margin="316,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="yearTextBox" HorizontalAlignment="Left" Height="23" Margin="316,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Enter a month (2 digits):&#xD;&#xA;" HorizontalAlignment="Left" Margin="316,10,0,0" VerticalAlignment="Top" Height="35"/>
+        <Label x:Name="label_Copy" Content="Enter a year (4 digits):&#xA;" HorizontalAlignment="Left" Margin="316,59,0,0" VerticalAlignment="Top" Height="35" Width="131"/>
+
+    </Grid>
+</Window>
